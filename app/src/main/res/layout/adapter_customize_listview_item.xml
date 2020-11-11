@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.favepc.reader.rfidreaderutility.object.SwipeLayout-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/adapter_customize_item_swipe"
+    android:layout_marginEnd="@dimen/layout_xxl_margin"
+    android:layout_marginStart="@dimen/layout_xxl_margin">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorRoyalBlue"
+            android:layout_marginStart="36dp"
+            android:id="@+id/adapter_customize_name"></TextView>
+        <LinearLayout
+            android:id="@+id/adapter_customize_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adapter_customize_name"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/adapter_customize_check"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/layout_xl_margin"
+                android:layout_gravity="center"
+                android:checked="true"/>
+            <TextView
+                android:id="@+id/adapter_customize_command"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/layout_xl_margin"
+                android:textSize="18sp"
+                android:padding="@dimen/layout_xl_margin"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:background="@drawable/gradient_border"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

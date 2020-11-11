@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="50%p" android:horizontalGap="1px" android:verticalGap="1px" android:keyHeight="44dip">
+    <Row>
+        <Key android:keyWidth="80%p" android:codes="4"
+            android:keyIcon="@mipmap/ic_settings_ethernet_white_48dp" android:popupKeyboard="@xml/keyboard_popup" />
+        <Key android:keyWidth="20%p" android:codes="44" android:keyLabel="," android:keyTextColor="@color/colorSnow1"/>
+    </Row>
+    <Row>
+        <Key android:keyWidth="20%p" android:codes="48" android:keyLabel="0" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="49" android:keyLabel="1" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="50" android:keyLabel="2" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="51" android:keyLabel="3" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="52" android:keyLabel="4" android:keyTextColor="@color/colorSnow1"/>
+    </Row>
+    <Row>
+        <Key android:keyWidth="20%p" android:codes="53" android:keyLabel="5" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="54" android:keyLabel="6" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="55" android:keyLabel="7" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="56" android:keyLabel="8" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="57" android:keyLabel="9" android:keyTextColor="@color/colorSnow1"/>
+
+    </Row>
+    <Row>
+        <Key android:keyWidth="20%p" android:codes="57419" android:keyEdgeFlags="right"
+            android:keyIcon="@mipmap/ic_keyboard_arrow_left_white_48dp" android:isRepeatable="true"/>
+        <Key android:keyWidth="20%p" android:codes="65" android:keyLabel="A" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="66" android:keyLabel="B" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="67" android:keyLabel="C" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="57421" android:keyEdgeFlags="right"
+            android:keyIcon="@mipmap/ic_keyboard_arrow_right_white_48dp" android:isRepeatable="true"/>
+    </Row>
+    <Row>
+        <Key android:keyWidth="20%p" android:codes="-3" android:keyIcon="@mipmap/ic_keyboard_hide_white_48dp" />
+        <Key android:keyWidth="20%p" android:codes="68" android:keyLabel="D" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="69" android:keyLabel="E" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="70" android:keyLabel="F" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="20%p" android:codes="-5" android:keyIcon="@mipmap/ic_keyboard_backspace_white_48dp" android:isRepeatable="true"/>
+    </Row>
+</Keyboard>

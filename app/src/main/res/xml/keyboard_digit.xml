@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android" android:horizontalGap="1px" android:verticalGap="1px"
+    android:keyHeight="60dip">
+
+    <Row>
+        <Key android:keyWidth="25%p" android:codes="49" android:keyLabel="1" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="25%p" android:codes="50" android:keyLabel="2" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="25%p" android:codes="51" android:keyLabel="3" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="25%p" android:codes="-5" android:keyIcon="@mipmap/ic_arrow_back_white_36dp" android:isRepeatable="true"/>
+    </Row>
+    <Row>
+        <Key android:keyWidth="25%p" android:codes="52" android:keyLabel="4" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="25%p" android:codes="53" android:keyLabel="5" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="25%p" android:codes="54" android:keyLabel="6" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="25%p" android:codes="46" android:keyLabel="." android:keyTextColor="@color/colorSnow1"/>
+    </Row>
+    <Row>
+        <Key android:keyWidth="25%p" android:codes="55" android:keyLabel="7" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="25%p" android:codes="56" android:keyLabel="8" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="25%p" android:codes="57" android:keyLabel="9" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="25%p" android:codes="-99" android:keyLabel=""/>
+    </Row>
+    <Row>
+        <Key android:keyWidth="25%p" android:codes="57419"  android:keyIcon="@mipmap/ic_keyboard_arrow_left_white_48dp" android:isRepeatable="true"/>
+        <Key android:keyWidth="25%p" android:codes="48" android:keyLabel="0" android:keyTextColor="@color/colorSnow1"/>
+        <Key android:keyWidth="25%p" android:codes="57421" android:keyIcon="@mipmap/ic_keyboard_arrow_right_white_48dp" android:isRepeatable="true"/>
+        <Key android:keyWidth="25%p" android:codes="-3" android:keyEdgeFlags="right" android:keyIcon="@mipmap/ic_keyboard_hide_white_36dp" />
+    </Row>
+</Keyboard>

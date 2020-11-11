@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_xl_margin"
+        android:background="@drawable/gradient_color"
+        android:text="@string/customize_name"
+        android:textColor="@color/colorGray800"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:labelFor="@id/fragment_customize_dialog_name" />
+    <EditText
+        android:id="@+id/fragment_customize_dialog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_xl_margin"
+        android:inputType="text"
+        android:autofillHints="Define Name"/>
+    <TextView
+        android:id="@+id/fragment_customize_dialog_command_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_xl_margin"
+        android:background="@drawable/gradient_color"
+        android:text="@string/customize_command"
+        android:textColor="@color/colorGray800"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:labelFor="@id/fragment_customize_dialog_command" />
+    <EditText
+        android:id="@+id/fragment_customize_dialog_command"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_xl_margin"
+        android:inputType="text"
+        android:autofillHints="Reader Command"/>
+</LinearLayout>

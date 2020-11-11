@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '29.0.2'
+    defaultConfig {
+        applicationId "com.favepc.reader.rfidreaderutility"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        //
+        //java.lang.UnsatisfiedLinkError:
+        // dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.favepc.reader.rfidreaderutility-vpua2wIHYv-334yFAYvqRQ==/base.apk"],
+        // nativeLibraryDirectories=[/data/app/com.favepc.reader.rfidreaderutility-vpua2wIHYv-334yFAYvqRQ==/lib/arm64, /system/lib64, /vendor/lib64]]]
+        // couldn't find "libserial_port.so"
+        //
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    //
+    //java.lang.UnsatisfiedLinkError:
+    // dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.favepc.reader.rfidreaderutility-vpua2wIHYv-334yFAYvqRQ==/base.apk"],
+    // nativeLibraryDirectories=[/data/app/com.favepc.reader.rfidreaderutility-vpua2wIHYv-334yFAYvqRQ==/lib/arm64, /system/lib64, /vendor/lib64]]]
+    // couldn't find "libserial_port.so"
+    //
+    /*sourceSets {
+        main {
+            jniLibs.scrDirs = ['libs']
+        }
+    }*/
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            ndk{
+                abiFilters "armeabi-v7a"
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility '1.7'
+        targetCompatibility '1.7'
+    }
+    productFlavors {
+    }
+    lintOptions {
+        checkReleaseBuilds true
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+    //Note: Some input files use or override a deprecated API.
+    //Note: Recompile with -Xlint:deprecation for details.
+    options.compilerArgs << '-Xlint:deprecation' << "-Xlint:unchecked"
+    options.deprecation = true
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'org.jetbrains:annotations-java5:15.0'
+
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    //androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    //    exclude group: 'com.android.support', module: 'support-annotations'
+    //})
+    androidTestImplementation 'junit:junit:4.13.1'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation "androidx.drawerlayout:drawerlayout:1.1.1"
+    //face, barcode api
+    implementation 'com.google.android.gms:play-services-vision:20.1.2'
+}

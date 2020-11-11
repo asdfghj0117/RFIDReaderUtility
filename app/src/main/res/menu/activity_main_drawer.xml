@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_demo"
+            android:icon="@mipmap/ic_demo_black_48dp"
+            android:title="@string/menu_item_demo" />
+        <item
+            android:id="@+id/nav_demoUR"
+            android:icon="@mipmap/ic_demo_black_48dp"
+            android:title="@string/menu_item_demoUR" />
+        <item
+            android:id="@+id/nav_common"
+            android:icon="@mipmap/ic_demo_black_48dp"
+            android:title="@string/menu_item_common" />
+        <item
+            android:id="@+id/nav_uCode8"
+            android:icon="@mipmap/ic_demo_black_48dp"
+            android:title="@string/menu_item_uCode8" />
+        <item
+            android:id="@+id/nav_barcode"
+            android:icon="@mipmap/baseline_qr_code_scanner_black_48"
+            android:title="@string/menu_item_barCode" />
+        <item
+            android:id="@+id/nav_customize"
+            android:icon="@mipmap/ic_demo_black_48dp"
+            android:title="@string/menu_item_customize" />
+        <item
+            android:id="@+id/nav_regular"
+            android:icon="@mipmap/ic_regular_black_48dp"
+            android:title="@string/menu_item_regular" />
+    </group>
+    <item android:title="@string/menu_item_communication_interface" android:enabled="false"/>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_ci_otg"
+            android:icon="@mipmap/ic_usb_black_48dp"
+            android:title="@string/menu_item_otg" />
+        <item
+            android:id="@+id/nav_ci_ble"
+            android:icon="@mipmap/ic_bluetooth_black_48dp"
+            android:title="@string/menu_item_ble" />
+        <item
+            android:id="@+id/nav_ci_wifi"
+            android:icon="@mipmap/ic_wifi_black_48dp"
+            android:title="@string/menu_item_wifi" />
+        <item
+            android:id="@+id/nav_ci_uart"
+            android:icon="@mipmap/baseline_compare_arrows_black_48"
+            android:title="@string/menu_item_uart" />
+    </group>
+    <item android:title="@string/menu_item_ble_handheld_field" android:enabled="false"/>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_handheld"
+            android:icon="@mipmap/baseline_perm_data_setting_black_48"
+            android:title="@string/menu_item_ble_handheld_mode" />
+        <item android:id="@+id/nav_handheld_demo"
+            android:icon="@mipmap/baseline_settings_remote_black_48"
+            android:title="@string/menu_item_ble_handheld_demo" />
+    </group>
+    <!--
+    <item android:title="@string/menu_item_communication_interface">
+        <menu>
+            <item
+                android:id="@+id/nav_ci_otg"
+                android:icon="@mipmap/ic_usb_black_48dp"
+                android:title="@string/menu_item_otg" />
+            <item
+                android:id="@+id/nav_ci_ble"
+                android:icon="@mipmap/ic_bluetooth_black_48dp"
+                android:title="@string/menu_item_ble" />
+            <item
+                android:id="@+id/nav_ci_wifi"
+                android:icon="@mipmap/ic_wifi_black_48dp"
+                android:title="@string/menu_item_wifi" />
+        </menu>
+    </item>
+    -->
+
+</menu>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/common_allview">
+    <TextView
+        android:id="@+id/common_tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_xl_margin"
+        android:text="@string/common_tvtitle"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:textColor="@color/colorGray800"
+        android:background="@drawable/gradient_color"/>
+    <ListView
+        android:id="@+id/common_lvMsg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_tvtitle"
+        android:layout_above="@+id/common_ll"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:background="@drawable/gradient_color_below"/>
+
+    <LinearLayout
+        android:id="@+id/common_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <com.favepc.reader.rfidreaderutility.adapter.WrapContentViewPager
+            android:id="@+id/common_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_pager"
+            android:flipInterval="5"
+            android:persistentDrawingCache="animation">
+        </com.favepc.reader.rfidreaderutility.adapter.WrapContentViewPager>
+    </LinearLayout>
+</RelativeLayout>

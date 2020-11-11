@@ -1,0 +1,280 @@
+<resources>
+    <string name="app_name">RFID Reader Utility</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_clear">Clear</string>
+    <string name="menu_combine">Show combine data</string>
+    <string name="menu_no_combine">Show raw data</string>
+    <string name="menu_disconnect">Disconnect</string>
+
+    <string name="nav_header_name">Reader Utility</string>
+    <string name="nav_header_version">v2.8.1  2020/10/20</string>
+
+    <string name="menu_item_demo">Multi(U)</string>
+    <string name="menu_item_demoUR">Multi&amp;Read(UR)</string>
+    <string name="menu_item_common">Common(Q,T,P,R,W,L,K)</string>
+    <string name="menu_item_uCode8">UCode 8(Brand Identifier)</string>
+    <string name="menu_item_barCode">BarCode</string>
+    <string name="menu_item_customize">Customize Process</string>
+    <string name="menu_item_regular">Reader Configure</string>
+    <string name="menu_item_ble_handheld_mode">RFID Mode Set</string>
+    <string name="menu_item_ble_handheld_demo">RFID/IR Code Demo</string>
+    <string name="menu_item_pager">Pager</string>
+    <string name="menu_item_communication_interface">Communication Interface</string>
+    <string name="menu_item_ble_handheld_field">BLE Handheld Project</string>
+    <string name="menu_item_otg">OTG</string>
+    <string name="menu_item_ble">BLE</string>
+    <string name="menu_item_wifi">Wi-Fi</string>
+    <string name="menu_item_uart">UART</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Multi(U)</item>
+        <item>Multi&amp;Read(UR)</item>
+        <item>Common(Q,T,P,R,W,L,K)</item>
+        <item>UCode(Brand Identifier)</item>
+        <item>BarCode</item>
+        <item>Customize Process</item>
+        <item>Reader Configure</item>
+        <item>Communication interface</item>
+        <item>OTG</item>
+        <item>BLE</item>
+        <item>Wi-Fi</item>
+        <item>UART</item>
+        <item>BLE Handheld Project</item>
+        <item>RFID Mode Set</item>
+        <item>RFID/IR Demo</item>
+    </string-array>
+
+    <!-- fragment_demo &#x0A; -->
+    <string name="demo_tvtitle">Tag List:</string>
+    <string name="demo_tvreadcount">Read Count:</string>
+    <string name="demo_tvtagcount"> &#x20;&#x20;Tag Count:</string>
+    <string name="demo_tv_select">Select command(T):</string>
+    <string name="demo_tv_access">Access command(P):</string>
+    <string name="demo_tv_read">Read command(R):</string>
+    <string name="demo_tv_write">Write command(W):</string>
+    <string name="demo_tv_lock">Lock command(L):</string>
+    <string name="demo_tv_kill">KilL command(K):</string>
+    <string name="demo_tv_slot">Slot Q:</string>
+    <string name="demo_btnStart">Start</string>
+    <string name="demo_btnClear">Clear</string>
+    <string name="demo_btnSend">Send</string>
+    <string name="demo_adapter_pc">PC</string>
+    <string name="demo_adapter_epc">EPC</string>
+    <string name="demo_adapter_crc">CRC16</string>
+    <string name="demo_adapter_rn">RN16</string>
+    <string name="demo_adapter_count">Count</string>
+    <string name="demo_adapter_percentage">Percentage</string>
+    <string name="demo_adapter_r">Read</string>
+    <string name="demo_adapter_tid">TID</string>
+
+    <string name="customize_open">Open</string>
+    <string name="customize_save">Save</string>
+
+    <string name="uCode8_bi_enable">Brand identifier(BI) enable</string>
+    <string name="uCode8_epc_tid">EPC + TID response</string>
+    <string name="uCode8_title_mode1">Tag List: BI ENABLE Mode 1</string>
+    <string name="uCode8_title_mode2">Tag List: BI ENABLE Mode 2</string>
+    <string name="uCode8_title_epc_tid">Tag List: EPC + TID</string>
+
+    <string name="barcode_tvtitle">BarCode List:</string>
+
+    <string-array name="slot_q">
+        <item>--</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+
+    <!-- fragment_customize -->
+    <string name="customize_name">Name:</string>
+    <string name="customize_command">Command:</string>
+    <!-- fragment_ble -->
+    <string name="ble_action_search">Search</string>
+    <string name="ble_action_set">Set</string>
+    <string name="ble_edit_mtu">20</string>
+    <string name="ble_msg_support_ble"> support for Bluetooth Low Energy</string>
+    <string name="ble_msg_no_support_ble"> doesn\'t support Bluetooth Low Energy</string>
+    <string name="ble_msg_version_low">, Build.VERSION &lt; 18</string>
+    <string name="ble_msg_disenable">Bluetooth is not enabled</string>
+    <string name="ble_msg_gps_enable">GPS is enabled</string>
+    <string name="ble_msg_start_scan">Start scanning for BLE devices, Please wait...</string>
+    <string name="ble_msg_stop_scan">Stop scanning for BLE devices.</string>
+    <string name="ble_msg_stop_service">Stop BLE service.</string>
+    <string name="ble_mtu_change_title">Set MTU bytes (after setting will be reconnected)</string>
+    <string name="ble_msg_mtu_error">MTU length is empty.</string>
+    <string name="ble_msg_mtu_disconnect">Disconnect the device, wait auto-connect!</string>
+    <string name="ble_msg_mtu_reconnect">Please wait for the reconnect, it may take a few second!</string>
+
+    <!-- fragment_barcode -->
+    <string name="barcode_action_scan">Scan</string>
+
+    <!-- fragment_ble_handheld -->
+    <string name="ble_handheld_msg">For BLE Handheld Project Demo Only</string>
+    <string name="ble_handheld_title">UHF RFID模式設定</string>
+    <string name="ble_handheld_title_mode">模式:</string>
+    <string name="ble_handheld_title_time">時間:</string>
+    <string name="ble_handheld_hint_btime"><font size="13"><i>(hex)</i></font></string>
+    <string name="ble_handheld_set">設定</string>
+    <string name="ble_handheld_bt_link_title">BLE連線/非連線模組休眠設定</string>
+
+    <!-- fragment_otg -->
+    <string name="otg_action_enumerate">Enumerate</string>
+    <string name="otg_msg_support"> support for USB host</string>
+    <string name="otg_msg_no_support"> doesn\'t support USB host</string>
+    <string name="otg_msg_driver_no_support">driver doesn\'t support this device.</string>
+    <string name="otg_msg_start_enumerate">Start enumerate devices, Please wait...</string>
+    <string name="otg_msg_stop_enumerate">Stop enumerate devices.</string>
+    <string name="otg_msg_stop_enumerate_no_device">Stop enumerate and device not found.</string>
+    <string name="otg_msg_stop_service">Stop OTG service.</string>
+    <string name="otg_adapter_vendorId_title">VID:</string>
+    <string name="otg_adapter_productId_title">PID:</string>
+    <string name="otg_msg_content_description">Image</string>
+
+    <!-- fragment_net -->
+    <string name="net_title_search">Search Net Device: </string>
+    <string name="net_title_assign">Assign Net Device</string>
+    <string name="net_action_search">Search</string>
+    <string name="net_action_connect">Connect</string>
+    <string name="net_action_connect_device">Connect Device:</string>
+    <string name="net_action_disconnect">Cancel</string>
+
+    <string name="net_hint_device_name">Device Name</string>
+    <string name="net_hint_tx_port">Tx Port</string>
+    <string name="net_hint_rx_port">Rx Port</string>
+    <string name="net_hint_address">Address</string>
+    <string name="net_hint_port">Port</string>
+    <string name="net_msg_stop_service">Stop Net service.</string>
+    <string name="net_adapter_port_title">Port:</string>
+    <string name="net_adapter_name_title">Name:</string>
+    <string name="net_adapter_ip_title">IP:</string>
+    <string name="net_adapter_mac_title">MAC:</string>
+    <string name="net_hint_address_ex">1.2.3.4</string>
+    <string name="net_hint_port_ex">1234</string>
+
+    <!-- fragment_uart -->
+    <string name="uart_msg_support"> support for UART device</string>
+    <string name="uart_msg_no_support"> doesn\'t support UART device</string>
+    <string name="uart_msg_stop_service">Stop UART service.</string>
+    <string name="uart_select_title">Serial Port Select</string>
+    <string name="uart_select_title_port">Port:</string>
+    <string name="uart_select_title_baudrate">Baud rate:</string>
+    <string name="uart_select_search">Serach</string>
+    <string name="uart_select_connect">Connect</string>
+    <string name="uart_select_disconnect">Disconnect</string>
+    <string name="uart_select_connected"> is connected.</string>
+    <string name="uart_select_connect_fail"> connect fail.</string>
+    <string name="uart_select_disconnected">Device disconnect</string>
+    <string name="uart_no_device">no device</string>
+
+    <!-- fragment_common -->
+    <string name="common_tvtitle">Message:</string>
+    <string name="common_adapter_tx">[TX]</string>
+    <string name="common_adapter_rx">[RX]</string>
+    <string name="common_adapter_hint_access_password"><font size="14"><i>Access Password</i></font></string>
+    <string name="common_adapter_hint_address"><font size="13"><i>Address</i></font></string>
+    <string name="common_adapter_hint_length"><font size="13"><i>Length</i></font></string>
+    <string name="common_adapter_hint_baddress"><font size="13"><i>bit Address</i></font></string>
+    <string name="common_adapter_hint_blength"><font size="13"><i>bit Length</i></font></string>
+    <string name="common_adapter_hint_data"><font size="14"><i>Data</i></font></string>
+    <string name="common_adapter_hint_bdata"><font size="14"><i>bit Data</i></font></string>
+    <string name="common_adapter_hint_kill_password"><font size="14"><i>Kill Password</i></font></string>
+    <string name="common_adapter_pager1_epc">EPC</string>
+    <string name="common_adapter_pager1_repeat">repeat</string>
+    <string name="common_adapter_pager2_tid">TID</string>
+    <string name="common_adapter_pager3_read">Read</string>
+    <string name="common_adapter_pager3_check">access password</string>
+    <string name="common_adapter_pager4_write">Write</string>
+    <string name="common_adapter_pager5_lock">Lock</string>
+    <string name="common_adapter_pager6_kill">Kill</string>
+
+    <string-array name="ble_handheld_rfid_mode">
+        <item>0:Default</item>
+        <item>1:Continue</item>
+    </string-array>
+    <string-array name="ble_handheld_bt_mode">
+        <item>0:No Link</item>
+        <item>1:Link</item>
+    </string-array>
+
+    <string-array name="common_memory_bank">
+        <item>Reserved</item>
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+    </string-array>
+    <string-array name="common_lock_kill_pwd">
+        <item>-- Kill Password --</item>
+        <item>Readable and writable</item>
+        <item>Permanently readable and writable</item>
+        <item>Need password to readable and writable</item>
+        <item>Need password to permanently readable and writable</item>
+    </string-array>
+    <string-array name="common_lock_access_pwd">
+        <item>-- Access Password --</item>
+        <item>Readable and writable</item>
+        <item>Permanently readable and writable</item>
+        <item>Need password to readable and writable</item>
+        <item>Need password to permanently readable and writable</item>
+    </string-array>
+    <string-array name="common_lock_epc_bank">
+        <item>-- EPC Bank --</item>
+        <item>Writable</item>
+        <item>Permanently writable</item>
+        <item>Need password to writable</item>
+        <item>Need password to permanently writable</item>
+    </string-array>
+    <string-array name="common_lock_user_bank">
+        <item>-- USER Bank --</item>
+        <item>Writable</item>
+        <item>Permanently writable</item>
+        <item>Need password to writable</item>
+        <item>Need password to permanently writable</item>
+    </string-array>
+    <string-array name="common_lock_tid_bank">
+        <item>-- TID Bank --</item>
+        <item>Writable</item>
+        <item>Permanently writable</item>
+        <item>Need password to writable</item>
+        <item>Need password to permanently writable</item>
+    </string-array>
+    <string-array name="uart_baudrate">
+        <item>4800</item>
+        <item>9600</item>
+        <item>14400</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>230400</item>
+    </string-array>
+
+    <string-array name="ucode8_mode">
+        <item>Mode 1: PC/EPC/RN16</item>
+        <item>Mode 2: PC/EPC</item>
+    </string-array>
+
+    <!-- fragment_regular -->
+    <string name="regular_info_title">Reader Status: </string>
+    <string name="regular_set_power_title">Set Power(dBm):</string>
+    <string name="regular_action_update">Update</string>
+    <string name="regular_action_power_set">Set</string>
+
+    <string name="regular_ver_title">Version:</string>
+    <string name="regular_area_title">Area:</string>
+    <string name="regular_freq_title">Frequency:</string>
+    <string name="regular_offset_title">Offset:</string>
+    <string name="regular_power_title">Power:</string>
+</resources>

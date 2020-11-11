@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/adapter_commnon_pager2_tv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/layout_xl_margin"
+        android:textSize="15dp"
+        android:maxLines="5"
+        android:textStyle="italic"/>
+    <Button
+        android:id="@+id/adapter_common_pager2_tid"
+        android:text="@string/common_adapter_pager2_tid"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+    <CheckBox
+        android:id="@+id/adapter_common_pager2_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/adapter_common_pager2_tid"
+        android:layout_alignTop="@id/adapter_common_pager2_tid"
+        android:layout_marginEnd="@dimen/layout_l_margin"
+        android:text="@string/common_adapter_pager1_repeat"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorGray800"/>
+    <ProgressBar
+        android:id="@+id/adapter_common_pager2_progressBar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/layout_h_margin"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progressbar_48_holo"/>
+
+
+</RelativeLayout>

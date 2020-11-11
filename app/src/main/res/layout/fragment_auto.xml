@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_fragment_demoir">
+    <TextView
+        android:id="@+id/fragment_demoir_msg"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_margin="@dimen/layout_xl_margin"
+        android:gravity="center"
+        android:background="@drawable/gradient_groupbox"
+        android:text="@string/ble_handheld_msg"
+        android:textColor="@color/colorPink400"
+        android:textStyle="bold|italic" />
+
+
+        <!--<com.favepc.reader.rfidreaderutility.adapter.HorizontalListView-->
+
+
+
+    <ListView
+        android:id="@+id/fragment_demoir_lv_msg"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/fragment_demoir_msg"
+        android:layout_above="@+id/fragment_demoir_btn_clear"
+        android:background="@drawable/gradient_color_below"/>
+
+
+    <Button
+        android:id="@+id/fragment_demoir_btn_clear"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_xl_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/demo_btnClear"
+        android:textSize="16sp" />
+
+</RelativeLayout>

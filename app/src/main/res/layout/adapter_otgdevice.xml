@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="2dp">
+    <LinearLayout
+        android:id="@+id/adapter_otg_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="5dp">
+        <ImageView
+            android:id="@+id/adapter_otg_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:contentDescription="@string/otg_msg_content_description" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/adapter_otg_manufacturerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/adapter_otg_thumbnail"
+        android:layout_toEndOf="@+id/adapter_otg_thumbnail"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/adapter_otg_productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adapter_otg_manufacturerName"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/adapter_otg_thumbnail"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/adapter_otg_deviceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adapter_otg_productName"
+        android:layout_marginTop="@dimen/layout_h_margin"
+        android:layout_toEndOf="@+id/adapter_otg_thumbnail"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorLightBlue4"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginEnd="@dimen/layout_l_margin"
+        android:layout_marginTop="@dimen/layout_xh_margin"
+        android:layout_toStartOf="@+id/adapter_otg_vendorId"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:text="@string/otg_adapter_vendorId_title"/>
+    <TextView
+        android:id="@+id/adapter_otg_vendorId"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:layout_marginEnd="@dimen/layout_l_margin"
+        android:layout_marginTop="@dimen/layout_xh_margin"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginEnd="@dimen/layout_l_margin"
+        android:layout_marginTop="@dimen/layout_xl_margin"
+        android:layout_toStartOf="@+id/adapter_otg_productId"
+        android:layout_below="@id/adapter_otg_vendorId"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:text="@string/otg_adapter_productId_title"/>
+    <TextView
+        android:id="@+id/adapter_otg_productId"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:layout_marginTop="@dimen/layout_xl_margin"
+        android:layout_marginEnd="@dimen/layout_l_margin"
+        android:layout_below="@id/adapter_otg_vendorId"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

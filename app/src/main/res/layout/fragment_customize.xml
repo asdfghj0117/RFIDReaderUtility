@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_fragment_customize">
+    <ListView
+        android:id="@+id/fragment_customize_lv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/layout_xl_margin"
+
+        android:transcriptMode="alwaysScroll"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:layout_above="@+id/fragment_customize_ll"
+        android:background="@drawable/gradient_color_below"/>
+    <LinearLayout
+        android:id="@+id/fragment_customize_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_pager">
+
+        <RelativeLayout
+            android:id="@+id/fragment_customize_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_minh_margin">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/fragment_customize_rl_coordinatorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<ListView
+                android:id="@+id/fragment_customize_lv_command"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true" />-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fragment_customize_rv_command"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fragment_customize_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fab_margin"
+                    app:layout_anchor="@id/fragment_customize_rv_command"
+                    app:layout_anchorGravity="bottom|right"
+                    app:fabSize="mini"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/fragment_customize_checkbox_process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_h_margin"
+                android:button="@drawable/checkbox_select"
+                android:layout_centerVertical="true"
+                android:checked="true"/>
+            <ImageButton
+                android:id="@+id/fragment_customize_btn_folder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/layout_l_margin"
+                android:layout_toEndOf="@id/fragment_customize_checkbox_process"
+                android:src="@mipmap/baseline_folder_open_black_36"
+                android:background="#00000000"
+                android:contentDescription="@string/customize_open" />
+            <ImageButton
+                android:id="@+id/fragment_customize_btn_save_folder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/layout_l_margin"
+                android:layout_toEndOf="@id/fragment_customize_btn_folder"
+                android:src="@mipmap/baseline_save_alt_black_36"
+                android:background="#00000000"
+                android:contentDescription="@string/customize_save" />
+            <Button
+                android:id="@+id/fragment_customize_btn_send"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_xl_margin"
+                android:text="@string/demo_btnSend"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
